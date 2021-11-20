@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.MemberDTO;
+
 @RestController
 @RequestMapping("/api/post-api")
 //리소스를 추가하기 위해 사용되는 API
