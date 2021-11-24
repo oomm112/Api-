@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +17,8 @@ import com.example.demo.service.ProductService;
 @RestController
 @RequestMapping("/api/product-api")
 public class ProductController {
+	
+	private final Logger PRODUCT_LOGGER = LoggerFactory.getLogger(TestController.class);
 	private ProductService productService;
 	
 	//자동으로 연결을 해준다.
@@ -25,7 +29,15 @@ public class ProductController {
 	
 	@GetMapping(value = "/product/{productId}")
 	public ProductDTO getProduct(@PathVariable String productId) {
-		return productService.getProduct(productId);
+		long startTime = System.currentTimeMillis();
+		PRODUCT_LOGGER.info("[ProductController] perform {} of Study API","getProduct");
+		
+		ProductDTO productDto = productService.getProduct(productId);
+		
+		PRODUCT_LOGGER.info("[ProductController] Response :: productId = {}, productName = {}, productPrice = {}, productStock = {}, Response Time = {}ms"
+				,productDto.getProductId(), productDto.getProductName(), productDto.getProductPrice(), productDto.getProductStock(), (System.currentTimeMillis() - startTime));
+		
+		return productDto;
 	}
 	
 	@PostMapping(value = "/product")

@@ -1,11 +1,13 @@
 package com.example.demo.dao.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.dao.ProductDAO;
 import com.example.demo.entity.ProductEntity;
 import com.example.demo.repository.ProductRepository;
 
+@Service
 public class ProductDAOImpl implements ProductDAO{
 	
 	ProductRepository productRepository;
