@@ -20,14 +20,19 @@ import lombok.Setter;
 @Entity
 @Table(name = "product")	//Entity기반 db에 자동으로 테이블을 생성 (즉, 이름은 테이블 이름)
 public class ProductEntity {
-	
+
 	@Id		//데이터베이스는 한테이블당 하나의 pk=primary key가 필요하다.
 	String productId;
 	String productName;
 	Integer productPrice;
 	Integer productStock;
-	
-	public ProductDTO toDto() {
-		return ProductDTO.builder();
+
+	public ProductDTO toDto(){
+		return ProductDTO.builder()
+				.productId(productId)
+				.productName(productName)
+				.productPrice(productPrice)
+				.productStock(productStock)
+				.build();
 	}
 }

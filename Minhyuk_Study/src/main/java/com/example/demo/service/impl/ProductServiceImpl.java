@@ -1,11 +1,14 @@
 package com.example.demo.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.dto.ProductDTO;
 import com.example.demo.entity.ProductEntity;
+import com.example.demo.handler.ProductDataHandler;
 import com.example.demo.service.ProductService;
 
+@Service
 public class ProductServiceImpl implements ProductService {
 	
 	//옵션사항 데이터가 핸들러가 필요한지 여부에따라서

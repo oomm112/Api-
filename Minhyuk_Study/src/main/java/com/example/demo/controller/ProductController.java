@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.ProductDTO;
+import com.example.demo.service.ProductService;
 
 @RestController
 @RequestMapping("/api/product-api")
