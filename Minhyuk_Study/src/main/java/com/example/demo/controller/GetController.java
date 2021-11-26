@@ -44,8 +44,8 @@ public class GetController {
 	
 	//ex) http://localhost:9092/api/v1/get-api/request1?name=flature&email=think@gmail.com&tel=010-1234-1234
 	@GetMapping(value = "/request1")
-	public String getRequestParam1(@RequestParam String email, @RequestParam String name, @RequestParam String tel) {
-		return name + " " + tel + " " + email;
+	public String getRequestParam1(@RequestParam String email, @RequestParam String name, @RequestParam String organization) {
+		return name + " " + organization + " " + email;
 	}
 	
 
