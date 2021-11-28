@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.dto.ProductDTO;
+import com.example.demo.data.dto.ProductDTO;
 
 public interface ProductService {
 	//루즈 커플링 : 컨트롤러와 서비스가 결합되는. 각 객체간 의존성 줄여주는 역할

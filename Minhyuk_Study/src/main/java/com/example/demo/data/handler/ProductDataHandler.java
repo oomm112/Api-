@@ -1,6 +1,6 @@
-package com.example.demo.handler;
+package com.example.demo.data.handler;
 
-import com.example.demo.entity.ProductEntity;
+import com.example.demo.data.entity.ProductEntity;
 
 public interface ProductDataHandler {
 	ProductEntity saveProductEntity(String productId, String productName, int productPrice, int productStock);

@@ -1,10 +1,10 @@
-package com.example.demo.entity;
+package com.example.demo.data.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.example.demo.dto.ProductDTO;
+import com.example.demo.data.dto.ProductDTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

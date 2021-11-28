@@ -3,9 +3,9 @@ package com.example.demo.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.dto.ProductDTO;
-import com.example.demo.entity.ProductEntity;
-import com.example.demo.handler.ProductDataHandler;
+import com.example.demo.data.dto.ProductDTO;
+import com.example.demo.data.entity.ProductEntity;
+import com.example.demo.data.handler.ProductDataHandler;
 import com.example.demo.service.ProductService;
 
 @Service

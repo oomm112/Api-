@@ -1,13 +1,13 @@
-package com.example.demo.handler.impl;
+package com.example.demo.data.handler.impl;
 
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.dao.ProductDAO;
-import com.example.demo.entity.ProductEntity;
-import com.example.demo.handler.ProductDataHandler;
+import com.example.demo.data.dao.ProductDAO;
+import com.example.demo.data.entity.ProductEntity;
+import com.example.demo.data.handler.ProductDataHandler;
 
 @Service
 @Transactional

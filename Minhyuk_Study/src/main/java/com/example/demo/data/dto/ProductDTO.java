@@ -1,10 +1,10 @@
-package com.example.demo.dto;
+package com.example.demo.data.dto;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
 
-import com.example.demo.entity.ProductEntity;
+import com.example.demo.data.entity.ProductEntity;
 import com.sun.istack.NotNull;
 
 import lombok.AllArgsConstructor;
