@@ -13,7 +13,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.example.demo.data.dto.ProductDTO;
 import com.example.demo.data.entity.ProductEntity;
-import com.example.demo.handler.impl.ProductDataHandlerImpl;
+import com.example.demo.data.handler.impl.ProductDataHandlerImpl;
 
 //SpringBootTest(classese = {productDataHandlerImpl.class, ProductServiceImpl.class})
 @ExtendWith(SpringExtension.class)
