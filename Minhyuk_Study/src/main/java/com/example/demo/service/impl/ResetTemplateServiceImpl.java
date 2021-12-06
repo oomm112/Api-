@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.example.demo.data.dto.MemberDTO;
+import com.example.demo.service.MemberDTO;
 import com.example.demo.service.RestTemplateService;
 
 @Service
